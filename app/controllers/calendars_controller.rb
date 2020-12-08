@@ -15,7 +15,7 @@ class CalendarsController < ApplicationController
   private
 
   def plan_params
-    params.require(:calendars).permit(:date, :plan)
+    params.require(:calendars).permit(:date, :plan)#保存がどこの部分でできていないかがわからないです
   end
 
   def getWeek
